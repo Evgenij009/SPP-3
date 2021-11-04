@@ -59,5 +59,15 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ExtendsStudent\ExtendsStudent.csproj">
+      <Project>{e9eaacc0-22b3-4bba-8ab2-ff3cd0d16717}</Project>
+      <Name>ExtendsStudent</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\University\University.csproj">
+      <Project>{11cc772c-4654-47d2-ba4c-4fb23f47483c}</Project>
+      <Name>University</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

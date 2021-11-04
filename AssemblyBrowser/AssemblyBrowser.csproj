@@ -109,6 +109,10 @@
       <Project>{c23bcc57-d9ad-4b51-844c-817f517d230c}</Project>
       <Name>AssemblyInfoGetter</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{eb7d7c3f-9435-4160-94df-e83b349b8817}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

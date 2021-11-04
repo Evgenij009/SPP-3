@@ -30,7 +30,7 @@ namespace TestAssemblyInfoGetter
             infoGetter.LoadAssembly("TestAssemblyInfoGetter.dll");
             var result = infoGetter.GetAssemblyInfo();
 
-            Assert.AreEqual("AssemblyInfoResult", result.DataTypes[0].Name);
+            Assert.AreEqual("AssemblyInfoResult", result.Namespaces[0].DataTypes[0].Name);
         }
 
         [TestMethod]
@@ -41,7 +41,7 @@ namespace TestAssemblyInfoGetter
             infoGetter.LoadAssembly("TestAssemblyInfoGetter.dll");
             var result = infoGetter.GetAssemblyInfo();
 
-            Assert.AreEqual("TestAssemblyName", result.DataTypes[0].Methods[0].Name);
+            Assert.AreEqual("TestAssemblyName", result.Namespaces[0].DataTypes[0].Methods[0].Name);
         }
 
         [TestMethod]
@@ -52,7 +52,7 @@ namespace TestAssemblyInfoGetter
             infoGetter.LoadAssembly("TestAssemblyInfoGetter.dll");
             var result = infoGetter.GetAssemblyInfo();
 
-            Assert.AreEqual("Num", result.DataTypes[0].Fields[0].Name);
+            Assert.AreEqual("Num", result.Namespaces[0].DataTypes[0].Fields[0].Name);
         }
 
         [TestMethod]
@@ -63,7 +63,7 @@ namespace TestAssemblyInfoGetter
             infoGetter.LoadAssembly("TestAssemblyInfoGetter.dll");
             var result = infoGetter.GetAssemblyInfo();
 
-            Assert.AreEqual(typeof(int), result.DataTypes[0].Fields[0].Type);
+            Assert.AreEqual(typeof(int), result.Namespaces[0].DataTypes[0].Fields[0].Type);
         }
     }
 }
